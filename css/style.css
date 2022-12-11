@@ -222,7 +222,7 @@ aside p {
 /* 푸터
 ------------------------------- */
 footer {
-    background: #432;
+    background: rgb(58, 137, 255);
     text-align: center;
     padding: 26px 0;
 }
