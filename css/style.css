@@ -8,7 +8,7 @@ html {
 body{
     font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
     line-height: 1.7;
-    color: #432;
+    color: black;
 }
 a {
     text-decoration: none;
@@ -32,27 +32,16 @@ img {
 /* 제목 */
 .page-title {
     font-size: 5rem;
-    font-family: 'Philosopher', serif;
+    font-family:'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-weight: normal;
+    color: white;
 }
 .sub-title {
     font-size: 1.375rem;
     padding: 0 8px 8px;
-    border-bottom: 2px #0bd solid;
+    border-bottom: 2px #00a4e3 solid;
     font-weight: normal;
-}
-
-/* 버튼 */
-.button {
-    font-size: 1.375rem;
-    background: #0bd;
-    color: #fff;
-    border-radius: 5px;
-    padding: 18px 32px;
-}
-.button:hover {
-    background: #0090aa;
 }
 
 /* iframe */
@@ -69,28 +58,36 @@ iframe {
 .logo {
     width: 210px;
     margin-top: 14px;
+    margin-bottom: 20px;
+    color: white;
+}
+.logo-img {
+    padding-top: 10px;
+    max-width: 40px;
+    margin-bottom: -8px;
+    margin-right: 5px;
 }
 .main-nav {
     display: flex;
     font-size: 1.25rem;
     text-transform: uppercase;
-    margin-top: 34px;
+    margin-top: 15px;
     list-style: none;
 }
 .main-nav li {
     margin-left: 36px;
 }
 .main-nav a {
-    color: #432;
+    color: rgb(255, 255, 255);
 }
 .main-nav a:hover {
-    color: #0bd;
+    color: rgb(0, 0, 0);
 }
 
 /* HOME
 ------------------------------- */
 #home {
-    background-image: url(../images/main-bg.jpg);
+    background-image: url(../images/main-bg2.jpg);
     min-height: 100vh;
 }
 #home .page-title {
@@ -99,6 +96,10 @@ iframe {
 .home-content {
     text-align: center;
     margin-top: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 15px;
+    max-width: 600px;
 }
 .home-content p {
     font-size: 1.125rem;
@@ -108,7 +109,7 @@ iframe {
 /* NEWS
 ------------------------------- */
 #news {
-    background-image: url(../images/news-bg.jpg);
+    background-image: url(../images/main-bg3.jpg);
     height: 270px;
     margin-bottom: 40px;
 }
@@ -131,7 +132,7 @@ article {
     margin-bottom: 40px;
 }
 .post-date {
-    background: #0bd;
+    background: #00a4e3;
     border-radius: 50%;
     color: #fff;
     width: 100px;
@@ -151,13 +152,13 @@ article {
     margin: 0 auto;
 }
 .post-title {
-    font-family: "Yu Mincho", "YuMincho", serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     font-weight: normal;
 }
-.post-title,
+
 .post-cat {
-    margin-left: 120px;
+    margin-left: 15px;
 }
 article img {
     margin-bottom: 20px;
@@ -192,7 +193,7 @@ aside p {
 /* MENU
 ------------------------------- */
 #menu {
-    background-image: url(../images/menu-bg.jpg);
+    background-image: url(../images/main-bg2.jpg);
     min-height: 100vh;
 }
 .menu-content {
@@ -214,11 +215,15 @@ aside p {
   margin-top: 6%;
   margin-bottom: 50px;
 }
+.item img{
+    width: 300px;
+    height: 230px;
+}
 
 /* CONTACT
 ------------------------------- */
 #contact {
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(../images/main-bg2.jpg);
     min-height: 100vh;
 }
 
@@ -287,19 +292,19 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 .sns-box {
-    width: 30%;
+    width: 50%;
 }
 
 /* 푸터
 ------------------------------- */
 footer {
-    background: #432;
+    background: #00a4e3;
     text-align: center;
     padding: 26px 0;
 }
 footer p {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 1.15rem;
 }
 
 /* 모바일 버전
@@ -365,14 +370,10 @@ footer p {
         margin-left: 80px;
     }
 
-    /* MENU */
-    .menu-content {
-        margin-top: 20%;
-    }
-
     /* CONTACT */
     #contact .page-title {
         margin-top: 40px;
+        color: white;
     }
 
     /* 입력 양식 */
